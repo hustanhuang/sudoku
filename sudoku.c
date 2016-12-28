@@ -113,7 +113,7 @@ int main(int argc, const char *argv[]) {
 
         if (argc > 1) {
                 bool sudoku_read = read(board, argv[1]);
-                if (!read) {
+                if (!sudoku_read) {
                         printf("cannot read a legal sudoku from %s\n", argv[1]);
                         return 1;
                 } else {
